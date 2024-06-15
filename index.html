@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+body{
+    background-color: rgb(1, 1, 19);
+    color:white;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(39, 39, 128);
+}
+/* @media screen and (min-width:768px) {
+    .flex{
+        display:flex;
+    }
+    
+} */
+
+nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: lavender;
+    font-size: 1.04rem;
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 240px 0;
+    align-items: center;
+   
+   
+
+}
+.firstsection > div{
+  width: 30%;
+}
+.leftsection{
+    /* background-color: red; */
+    font-size: 2.5rem;
+ /* margin: 70px 0; */
+}
+.leftsection .btn{
+    padding: 2px;
+    background: rgb(16, 16, 87);
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.leftsection .buttons{
+    padding: 50px 0;
+}
+.rightsection img{
+    width: 90%;
+   
+ 
+}
+.purple{
+    color: rgb(117, 39, 190);
+}
+#element{
+    color: rgb(117, 39, 190);
+}
+.secondsection{
+max-width: 80vw;
+    margin: auto;
+    height:80vh;
+    
+}
+main hr{
+    background: rgb(37, 37, 111);
+    height:1.px;
+margin: 40px 84px;
+}
+.secondsection h1{
+    font-size: 1.9rem;
+}
+.gray{
+    color: gray;
+}
+.secondsection .box{
+    background: white;
+    width: 77vw;
+    height: 1.5px;
+    margin: 56px 0;
+    display: flex;
+}
+.secondsection .vertical{
+    height:93px;
+    width:1px;
+background-color: white;
+margin: 0 120px;
+
+}
+
+.top-image{
+    width:37px;
+    position: relative;
+    top:-32px;
+    left:-9px;
+
+
+}
+.vertical img{
+    border-radius: 50%;
+}
+.vertical-title{
+position: relative;
+top:75px;
+width: 150px;
+font-size: 14px;
+}
+.vertical-des{
+position: relative;
+top:86px;
+color: gray;
+width: 150px;
+font-size: 9px;
+}
+footer{
+    background-color: rgb(12, 9, 39);
+    
+    /* height:233px; */
+}
+.flex{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.flex ,a{
+    color: white;
+    text-decoration: none;
+}
+.flex a:hover{
+    color:gray;
+    font-size: 1.05rem;
+}
+.flex ul{
+    list-style: none;
+}
+.flex >div{
+width: 223px;
+}
+.text-center{
+    text-align: center;
+    color: rgb(187, 161, 161);
+    padding: 12px 0;
+}
+
+.thirdsection{
+    height:475px;
+    display:flex;
+    background-color: rgb(56, 83, 89);
+overflow: hidden;
+}
+.thirdsection {
+    font-size: 2.5rem;
+    width: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+@media (max-width:768px) {
+    .thirdsection{
+        display: block;
+        flex-direction:column;
+align-items: center;
+background-size: cover;
+background-attachment: fixed;
+white-space: normal;
+height: auto;
+align-items: center;
+
+    }
+    .thirdsection img{
+        width: 100%;
+    }
+}
+.thirdsection img{
+    width: 40%;
+
+    border-radius: 50%;
+}
+.thirdsection ,h1{
+  font-size:2rem;
+  font-weight: 200;
+font-family:'Times New Roman', Times, serif ;
+  font: optional;
+}
+.thirdsection,about{
+    display: flex;
+    justify-content:space-between;
+    text-align:center;
+   font-size: 1.2rem;
+  
+}
+.about,ul{
+    list-style: none;
+ 
+}
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .firstsection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstsection > div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .left {
+        font-size: 1.2rem;
+    }
+    .firstsection {
+        margin: 120px 0;
+    }
+    .leftsection {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .leftsection .buttons {
+        text-align: center;
+    }
+    .rightsection img {
+        width: 100%;
+    }
+    .secondsection {
+        height: auto;
+    }
+    .secondsection .box {
+       display:block;
+        flex-direction: column;
+        align-items:center;
+        background-size:auto;
+        height: auto;
+    }
+    .secondsection .vertical {
+        margin: 40px 0;
+    }
+    .vertical-title, .vertical-des {
+        text-align: center;
+    }
+    footer .flex {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    footer .flex > div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width:768px) {
+
+    footer .flex{
+display: flex;
+flex-direction: row;
+text-align: center;
+background-size: cover;
+white-space: normal;
+min-height: 100vh;
+margin-top: auto;
+    }
+}
+
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Mahesh Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+<div class="leftsection">
+Hi,My name is my <span class="purple">Mahesh</span>
+<div>
+    and I am web passionate
+</div>
+<!-- <div>
+    Web developer
+</div> -->
+<span id="element"></span>
+<div class="buttons">
+    <button class="btn">
+Download Resume
+    </button>
+    <button class="btn">
+Visit GitHub
+    </button>
+</div>
+</div>
+<div class="rightsection">
+<img src="image.png">
+</div>
+        </section>
+    <hr>
+<section class="secondsection">
+    <span class="gray">
+What I have done so far
+    </span>
+    <h1>Past Experiences</h1>
+    <div class="box">
+        <div class="vertical">
+<img class="top-image"src="10.jpg">
+<div class="vertical-title">
+    Class 10th(2019)
+</div>
+<div class="vertical-des">I did my class 10th from DMP Holy Mission Public School,Rosera,Samastipur(Bihar) in 2021...
+    I passed with 83%.
+</div>    
+</div>
+        
+<div class="vertical">
+    <img class="top-image"src="12th.jfif">
+    <div class="vertical-title">
+       Class 12th(2021)
+    </div>
+    <div class="vertical-des">I did my intermediate from DMP Holy Mission Public School,Rosera,Samastipur(Bihar) in 2021...
+        I passed with 82.8%.
+    </div>       
+    </div>
+
+    <div class="vertical">
+        <img class="top-image"src="webdev.jpg">
+        <div class="vertical-title">
+            Web developer
+        </div>
+        <div class="vertical-des">I am passionate to web developer..
+        </div>        
+        </div>
+
+    <div class="vertical">
+        <img class="top-image"src="sliet.jpg">
+        <div class="vertical-title">
+           Pursuing Btech degree in SLIET(2022-2026).
+        </div>
+   <div class="vertical-des">I am Computer Science Enginering Student and Pursuing from Govtt Sant longowal Institiue of Enginering and 
+    technology,Sangrur(Punjab)..
+   </div>             
+        </div>
+        
+            <div class="vertical">
+                <img class="top-image"src="DSA_Logo.png">
+                <div class="vertical-title">
+                   DSA Question Solver
+                </div>
+                <div class="vertical-des">
+                    I have solved 250+ Question on leetcode and 400+ on Codeforces..
+</div>
+                </div>
+                
+    </div>
+
+
+</section>
+
+<section class="thirdsection">
+
+   <div class="about">
+  
+    <h1>
+        About Me
+    </h1>
+    <hr>
+        <ul>
+        <li>Hello Everyone ,Myself Mahesh Prasad.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ea.</li>
+        <li>Thank you</li>
+        </ul>
+   </div>
+   
+   
+<img src="web.jpg">
+
+</section>
+    </main>
+
+    <footer>
+        <div class="flex">
+<div class="first">
+    <h3>
+        Mahesh's Developer Portfolio.
+    </h3>
+</div>
+<div class="second">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Me</li>
+        <li>Projects</li>
+    </ul>
+</div>
+<div class="third">
+    <ul>
+        <li>Social Media</li>
+        <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UC1RGd7m-bcaCiD6UNeBFbqQ">You tube</a></li>
+    </ul>
+</div>
+<div class="fourth">
+    <ul>
+        <li><a href="https://leetcode.com/u/maheshprasad61688/">Leetcode</a></li>
+        <li><a href="https://www.geeksforgeeks.org/user/maheshpra1dy0/">Geeks for Geeks</a></li>
+        <li><a href="https://www.codechef.com/users/maheshprasad61">Codechef</a></li>
+        <li><a href="https://www.naukri.com/code360/profile/Maheshkr">Code360</a></li>
+    </ul>
+</div>
+        </div>
+        <div class="text-center">
+            Copyright © Mahesh's Portfolio.</br>
+            All rights are reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web developer.', 'Graphics designer.','Video Editor.','Web designer.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
