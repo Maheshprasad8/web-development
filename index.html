@@ -29,13 +29,6 @@ nav{
     height: 80px;
     background-color: rgb(39, 39, 128);
 }
-/* @media screen and (min-width:768px) {
-    .flex{
-        display:flex;
-    }
-    
-} */
-
 nav ul{
     display: flex;
     justify-content: center;
@@ -100,7 +93,7 @@ nav ul li a:hover{
 .secondsection{
 max-width: 80vw;
     margin: auto;
-    height:80vh;
+    height:100vh;
     
 }
 main hr{
@@ -115,43 +108,64 @@ margin: 40px 84px;
     color: gray;
 }
 .secondsection .box{
-    background: white;
-    width: 77vw;
-    height: 1.5px;
-    margin: 56px 0;
-    display: flex;
+    padding-top: 3rem;
+    display: grid;
+    grid-gap:2.03rem;
+    grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(2,1fr);
+  padding-left: 40px;
+padding-right: 40px;
+background-color: cover;
+height: 30px;
+
 }
 .secondsection .vertical{
-    height:93px;
-    width:1px;
-background-color: white;
-margin: 0 120px;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(79, 79, 158);
+padding: 1.5rem;
+border-radius: 2.5rem;
+gap:1rem;
 
 }
 
 .top-image{
-    width:37px;
-    position: relative;
-    top:-32px;
-    left:-9px;
-
-
+    height: 50px;
+    width: 50px;
 }
 .vertical img{
-    border-radius: 50%;
+   
+ border-radius: 50%;
 }
 .vertical-title{
-position: relative;
-top:75px;
-width: 150px;
-font-size: 14px;
+    padding-top: 20px;
+    color:white;
+    font-weight: bold;
+    font-size: 1.15rem;
 }
 .vertical-des{
-position: relative;
 top:86px;
 color: gray;
-width: 150px;
-font-size: 9px;
+width: 120px;
+font-size: 15px;
+  color:white;
+}
+.secondsection .vertical:nth-child(2){
+    background-color:#9e4687 ;
+}
+.secondsection .vertical:nth-child(3){
+    background-color:#6e7325 ;
+}
+.secondsection .vertical:nth-child(4){
+    background-color:#3b7d99 ;
+}
+
+@media screen and (max-width:768px) {
+    .secondsection .vertical{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 footer{
     background-color: rgb(12, 9, 39);
@@ -334,7 +348,7 @@ margin-top: auto;
     <main>
         <section class="firstsection">
 <div class="leftsection">
-Hi,My name is  <span class="purple">Mahesh</span>
+Hi,My name is my <span class="purple">Mahesh</span>
 <div>
     and I am web passionate
 </div>
@@ -367,7 +381,8 @@ What I have done so far
 <div class="vertical-title">
     Class 10th(2019)
 </div>
-<div class="vertical-des">I did my class 10th from DMP Holy Mission Public School,Rosera,Samastipur(Bihar) in 2021...
+<div class="vertical-des">I did my class 10th from DMP Holy Mission Public School,Rosera,Samastipur(BR) in 2021...
+
     I passed with 83%.
 </div>    
 </div>
@@ -377,11 +392,22 @@ What I have done so far
     <div class="vertical-title">
        Class 12th(2021)
     </div>
-    <div class="vertical-des">I did my intermediate from DMP Holy Mission Public School,Rosera,Samastipur(Bihar) in 2021...
-        I passed with 82.8%.
+    <div class="vertical-des">I did my intermediate from DMP Holy Mission Public School,Rosera,Samastipur(BR) in 2021...
+   
+    I passed with 82.8%.
     </div>       
     </div>
 
+    <div class="vertical">
+        <img class="top-image"src="sliet.jpg">
+        <div class="vertical-title">
+            Btech degree 
+        </div>
+   <div class="vertical-des">I am Computer Science Enginering Student and Pursuing from Govtt Sant longowal Institiue of Enginering and 
+    technology,Sangrur(Punjab)..
+   </div>             
+        </div>
+        
     <div class="vertical">
         <img class="top-image"src="webdev.jpg">
         <div class="vertical-title">
@@ -391,25 +417,8 @@ What I have done so far
         </div>        
         </div>
 
-    <div class="vertical">
-        <img class="top-image"src="sliet.jpg">
-        <div class="vertical-title">
-           Pursuing Btech degree in SLIET(2022-2026).
-        </div>
-   <div class="vertical-des">I am Computer Science Enginering Student and Pursuing from Govtt Sant longowal Institiue of Enginering and 
-    technology,Sangrur(Punjab)..
-   </div>             
-        </div>
-        
-            <div class="vertical">
-                <img class="top-image"DSA_Logo.png">
-                <div class="vertical-title">
-                   DSA Question Solver
-                </div>
-                <div class="vertical-des">
-                    I have solved 250+ Question on leetcode and 400+ on Codeforces..
-</div>
-                </div>
+    
+            
                 
     </div>
 
@@ -446,6 +455,8 @@ What I have done so far
 <img src="web.jpg">
 
 </section>
+
+
     </main>
 
     <footer>
