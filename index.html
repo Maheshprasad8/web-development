@@ -152,6 +152,24 @@ width: 120px;
 font-size: 15px;
   color:white;
 }
+.vertical-des{
+      animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+
 .secondsection .vertical:nth-child(2){
     background-color:#9e4687 ;
 }
@@ -250,6 +268,24 @@ font-family:'Times New Roman', Times, serif ;
     list-style: none;
  
 }
+.thirdsection,ul
+{
+    text-align:center;
+    animation: slidefromLeft 8s ease forwards;
+    opacity: 0;
+    
+}
+@keyframes slidefromLeft {
+    0%{
+        opacity:0;
+        transform:translateX(-150%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @media (max-width: 1024px) {
     nav ul {
         flex-direction: column;
@@ -324,7 +360,22 @@ min-height: 100vh;
 margin-top: auto;
     }
 }
+footer.flex,.first,.second,.third,.fourth{
+      animation-duration: 12s;
+  animation-name: slideout;
+}
 
+@keyframes slideout {
+  from {
+    translate: 0 150vw ;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 100;
+    scale: 100% 1;
+  }
+}
 
     </style>
     
@@ -381,7 +432,7 @@ What I have done so far
 <div class="vertical-title">
     Class 10th(2019)
 </div>
-<div class="vertical-des">I did my class 10th from DMP Holy Mission Public School,Rosera,Samastipur(BR) in 2021...
+<div class="vertical-des">I did my class 10th from DMP Holy Mission Public School,Rosera(BR) in 2021...
 
     I passed with 83%.
 </div>    
@@ -392,7 +443,7 @@ What I have done so far
     <div class="vertical-title">
        Class 12th(2021)
     </div>
-    <div class="vertical-des">I did my intermediate from DMP Holy Mission Public School,Rosera,Samastipur(BR) in 2021...
+    <div class="vertical-des">I did my intermediate from DMP Holy Mission Public School,Rosera(BR) in 2021...
    
     I passed with 82.8%.
     </div>       
