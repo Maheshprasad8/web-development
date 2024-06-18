@@ -173,11 +173,32 @@ font-size: 15px;
 .secondsection .vertical:nth-child(2){
     background-color:#9e4687 ;
 }
+
+
 .secondsection .vertical:nth-child(3){
     background-color:#6e7325 ;
 }
 .secondsection .vertical:nth-child(4){
     background-color:#3b7d99 ;
+}
+.vertical:nth-child(1):hover{
+    background-color:rgb(121, 107, 64) ;
+    transform: scale(1.02);
+   
+   
+}
+.vertical:nth-child(2):hover{
+    background-color:rgb(97, 147, 147) ;
+    transform: scale(1.02);
+    
+}
+.vertical:nth-child(3):hover{
+    background-color:rgb(32, 123, 40) ;
+    transform: scale(1.02);
+}
+.vertical:nth-child(4):hover{
+    background-color:rgb(61, 55, 125) ;
+    transform: scale(1.02);
 }
 
 @media screen and (max-width:768px) {
@@ -201,7 +222,7 @@ footer{
     text-decoration: none;
 }
 .flex a:hover{
-    color:gray;
+    
     font-size: 1.05rem;
 }
 .flex ul{
@@ -252,8 +273,9 @@ align-items: center;
     border-radius: 50%;
 }
 .thirdsection ,h1{
-  font-size:2rem;
-  font-weight: 200;
+   
+  font-size:2.5rem;
+  font-weight: 300;
 font-family:'Times New Roman', Times, serif ;
   font: optional;
 }
@@ -268,12 +290,19 @@ font-family:'Times New Roman', Times, serif ;
     list-style: none;
  
 }
-.thirdsection,ul
+
+.thirdsection.about,ul:hover
 {
+   transform: scale(1.05);
     text-align:center;
-    animation: slidefromLeft 8s ease forwards;
-    opacity: 0;
+ color: rgb(211, 204, 204);
+   background-image: linear-gradient(rgb(59, 46, 163),rgb(13, 5, 25));
+
     
+}
+.about,img:hover{
+    transform: scale(1.07,1.05);
+   
 }
 @keyframes slidefromLeft {
     0%{
@@ -455,7 +484,7 @@ What I have done so far
             Btech degree 
         </div>
    <div class="vertical-des">I am Computer Science Enginering Student and Pursuing from Govtt Sant longowal Institiue of Enginering and 
-    technology,Sangrur,PB
+    technology,Sangrur(PB)
    </div>             
         </div>
         
