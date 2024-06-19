@@ -28,6 +28,7 @@ nav{
     align-items: center;
     height: 80px;
     background-color: rgb(39, 39, 128);
+    padding-top:10px;
 }
 nav ul{
     display: flex;
@@ -45,6 +46,26 @@ nav ul li a{
 nav ul li a:hover{
     color: lavender;
     font-size: 1.04rem;
+}
+
+.menu-icon{
+   height:1.5rem;
+   width:1.5rem; 
+}
+.menu-button{
+    display: none;
+    border: none;
+    padding: 0.3rem;
+    font-size:1rem;
+    font-weight: 600;
+    border-radius: .375rem;
+    padding: 0.5px 0.5px;
+}
+@media screen and (max-width:768px) {
+    .menu-button{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 .left{
     font-size: 1.5rem;
@@ -273,18 +294,22 @@ align-items: center;
     border-radius: 50%;
 }
 .thirdsection ,h1{
-   
+  padding-top: 15px; 
+
   font-size:2.5rem;
-  font-weight: 300;
+  font-weight: 200;
 font-family:'Times New Roman', Times, serif ;
-  font: optional;
+
 }
 .thirdsection,about{
     display: flex;
     justify-content:space-between;
     text-align:center;
    font-size: 1.2rem;
-  
+  flex-wrap: wrap;
+  margin: 20px;
+
+position: relative;
 }
 .about,ul{
     list-style: none;
@@ -318,7 +343,8 @@ font-family:'Times New Roman', Times, serif ;
 @media (max-width: 1024px) {
     nav ul {
         flex-direction: column;
-        align-items: center;
+        align-items:stretch;
+      
     }
     nav ul li {
         margin: 10px 0;
@@ -423,6 +449,11 @@ footer.flex,.first,.second,.third,.fourth{
                 </ul>
             </div>
         </nav>
+        
+            <button class="menu-button">
+                <img src="avatar.jpg"alt="menu-button"class="menu-icon"/>
+    
+            </button>
     </header>
 
     <main>
